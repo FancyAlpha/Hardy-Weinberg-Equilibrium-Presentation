@@ -1,0 +1,93 @@
+.cbp_tmtimeline {
+	margin: 30px 0 0 0;
+	padding: 0;
+	list-style: none;
+	position: relative;
+} 
+
+/* The line */
+.cbp_tmtimeline:before {
+	content: '';
+	position: absolute;
+	top: 0;
+	bottom: 190px;
+	width: 10px;
+	background: rgba(0,190,255,0.7);
+	left: 10%;
+	margin-left: -10px;
+}
+
+/* Right content */
+.cbp_tmtimeline > li .cbp_tmlabel {
+	margin: 0 0 35px 15%;
+	background: #3594cb;
+	color: #fff;
+	padding: 2em;
+	font-size: 1.2em;
+	font-weight: 300;
+	line-height: 1.4;
+	position: relative;
+	border-radius: 5px;
+	margin-top: -35px;
+	width: 70%;
+	transform: scale(1);
+	transition: all 0.4s ease-in-out;
+}
+
+.cbp_tmtimeline > li .cbp_tmlabel:hover {
+	transform: scale(1.05);	
+	box-shadow: 4px 4px 4px 0px rgba(0,0,0,0.3);
+}
+
+.cbp_tmtimeline > li:nth-child(odd) .cbp_tmlabel {
+	background: rgba(0,190,255,0.7);
+}
+
+.cbp_tmtimeline > li:last-child .cbp_tmlabel {
+	margin-bottom: 90px;
+}
+
+.cbp_tmtimeline > li .cbp_tmlabel h2 { 
+	margin-top: 0px;
+	padding: 0 0 10px 0;
+	border-bottom: 1px solid rgba(255,255,255,0.4);
+}
+
+/* The triangle */
+.cbp_tmtimeline > li .cbp_tmlabel:after {
+	right: 100%;
+	border: solid transparent;
+	content: " ";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+	border-right-color: #3594cb;
+	border-width: 10px;
+	top: 10px;
+}
+
+.cbp_tmtimeline > li:nth-child(odd) .cbp_tmlabel:after {
+	border-right-color: rgba(0,190,255,0.7);
+}
+
+/* The icons */
+.cbp_tmtimeline > li .fa {
+	width: 40px;
+	height: 40px;
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	font-size: 1.4em;
+	line-height: 40px;
+	position: relative;
+	color: #fff;
+	background: #46a4da;
+	border-radius: 50%;
+	box-shadow: 0 0 0 8px rgba(0,190,255,0.7);
+	text-align: center;
+	left: 10%;
+	margin: 0 0 0 -25px;
+}
