@@ -1,0 +1,39 @@
+#boxes {
+    margin: auto;
+    width: 80vw;
+    background: rgb(250,250,250);
+    box-shadow:0 0 20px rgba(0,0,0,0.8);
+    box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+    margin-bottom: 80px;
+    color: rgba(0,0,0,0.8);
+}
+
+.stuff2 {
+    height: 120px;
+    box-shadow: 0px 8px 0px -5px rgba(0,0,0,0.3);
+    overflow: hidden;
+    transition: all 0.5s ease-in-out;
+}
+
+.stuff2:hover {
+    height: 70vh;
+} 
+
+.stuff02, .hid {
+    padding: 0vw 5vw;
+} 
+
+.stuff02 {
+    font-size: 30px;    
+    font-weight: 600;
+    margin: 45px 0vh;
+}
+
+table {
+	margin-top: 2em;
+}
+
+th,td {
+	border: 1px solid white;
+	padding: 2em;
+}
